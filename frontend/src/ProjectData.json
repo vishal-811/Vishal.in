@@ -1,0 +1,33 @@
+{
+    "data": [
+      {
+        "link": "https://prohireee.vercel.app/",
+        "label": "ProHire",
+        "svg":"",
+        "title": "ProHire",
+         "image":"https://prohireee.vercel.app/assets/logo-CRJ-5JWy.png",
+        "description": "Effortlessly discover and apply for your dream job with diverse listings and an enhanced profile. For employers, streamline hiring by creating detailed job listings and reaching top candidates efficiently. ProHire connects job seekers and employers, fostering growth and opportunity in the job market.",
+        "technologies": ["React", "Node.js", "Express.js","MongoDB","Zod","Tailwind","JavaScript"]
+      },
+      {
+        "link": "https://bettx-vishal-811s-projects.vercel.app/",
+        "label": "BetX",
+        "svg": "",
+        "title": "BetX",
+        "image":"https://play-lh.googleusercontent.com/SRFSG20-QT-FLVxKIN_eZZHsKcPGki65vVMhPVbQFYpepRkDPKmHL91dEPgxZAIgMFAQ=w240-h480-rw",
+        "description": "BetX is a web app where users play games to win money through interactive betting and gaming experiences. AS of now we have only one game Plinko soon we will add more games",
+        "technologies": ["React", "Express", "MongoDB"]
+      },
+      {
+        "link": "https://paytm-clone-alpha.vercel.app/",
+        "label": "Paytm Karo",
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\" viewBox=\"0 0 100 100\"><path fill=\"#31c4f3\" d=\"M90,44c1.103,0,2,0.897,2,2v16c0,1.103,0.897,2,2,2h3c1.103,0,2-0.897,2-2V43.5 c0-4.136-3.364-7.5-7.5-7.5c-1.595,0-3.076,0.424-4.284,1.227l-0.547,0.364l-0.551-0.359C84.015,35.865,81,35.549,78.5,36.734 l-0.622,0.295l-0.498-0.475C77.006,36.197,76.516,36,76,36h-4c-1.103,0-2,0.897-2,2v24c0,1.103,0.897,2,2,2h3c1.103,0,2-0.897,2-2 V46c0-1.103,0.897-2,2-2s2,0.897,2,2v16c0,1.103,0.897,2,2,2h3c1.103,0,2-0.897,2-2V46C88,44.897,88.897,44,90,44z\"></path><path fill=\"#31c4f3\" d=\"M57,36c-1.103,0-2,0.897-2,2v3.005c0,1.098,0.893,1.995,1.99,2l2.001,0.01L59,62.001 C59,63.103,59.897,64,61,64h3c1.103,0,2-0.897,2-2V43h2c1.103,0,2-0.897,2-2v-3c0-1.103-0.897-2-2-2h-2v-2.021 C66,32.925,65,32,63.859,32c-0.646,0-1.324,0.29-1.769,0.755c-0.057,0.06-0.18,0.208-0.296,0.35l-0.162,0.196 c-0.273,0.294-0.516,0.568-0.744,0.826C59.65,35.523,59.168,36,58,36H57z\"></path><path fill=\"#375ca9\" d=\"M39,36c-1.103,0-2,0.897-2,2v13c0,2.465,1.481,4.653,3.774,5.572l1.072,0.43l-0.579,1 C41.092,58.304,41,58.649,41,59v3c0,1.103,0.897,2,2,2h5.997c3.308,0,6-2.691,6-5.999L55,38c0-0.535-0.208-1.037-0.586-1.414 C54.036,36.208,53.534,36,53,36h-3c-1.103,0-2,0.897-2,2v11h-3.993L44,37.999C44,36.896,43.102,36,42,36H39z\"></path><path fill=\"#375ca9\" d=\"M37.002,41.998C37,38.69,34.309,36,31.002,36H25c-1.103,0-2,0.897-2,2v3.004 c0,0.35,0.092,0.694,0.267,0.995l0.579,0.999l-1.071,0.43C20.481,44.348,19,46.535,19,49v9c0,3.309,2.691,6,6,6h9.009 c0.802,0,1.555-0.312,2.121-0.879c0.567-0.567,0.879-1.321,0.879-2.122L37.002,41.998z M30,55.75c0,0.689-0.561,1.25-1.25,1.25 h-1.5C26.561,57,26,56.439,26,55.75v-4.5c0-0.689,0.561-1.25,1.25-1.25h1.5c0.689,0,1.25,0.561,1.25,1.25V55.75z\"></path><path fill=\"#375ca9\" d=\"M13,36H3c-1.103,0-2,0.897-2,2v24c0,1.103,0.897,2,2,2h3c1.103,0,2-0.897,2-2v-6h5 c3.309,0,6-2.691,6-6v-8C19,38.691,16.309,36,13,36z M12,47.5c0,0.827-0.673,1.5-1.5,1.5H9H8v-1v-4v-1h1h1.5 c0.827,0,1.5,0.673,1.5,1.5V47.5z\"></path><g><path fill=\"#1f212b\" d=\"M73.5,41c-0.276,0-0.5-0.224-0.5-0.5v-1c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v1 C74,40.776,73.776,41,73.5,41z\"></path><path fill=\"#1f212b\" d=\"M73.5,46c-0.276,0-0.5-0.224-0.5-0.5v-3c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v3 C74,45.776,73.776,46,73.5,46z\"></path><path fill=\"#1f212b\" d=\"M73.5,61c-0.276,0-0.5-0.224-0.5-0.5v-12c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v12 C74,60.776,73.776,61,73.5,61z\"></path><path fill=\"#1f212b\" d=\"M4.5,41C4.224,41,4,40.776,4,40.5v-1C4,39.224,4.224,39,4.5,39S5,39.224,5,39.5v1 C5,40.776,4.776,41,4.5,41z\"></path><path fill=\"#1f212b\" d=\"M4.5,47C4.224,47,4,46.776,4,46.5v-4C4,42.224,4.224,42,4.5,42S5,42.224,5,42.5v4 C5,46.776,4.776,47,4.5,47z\"></path><path fill=\"#1f212b\" d=\"M4.5,61C4.224,61,4,60.776,4,60.5v-11C4,49.224,4.224,49,4.5,49S5,49.224,5,49.5v11 C5,60.776,4.776,61,4.5,61z\"></path><path fill=\"#1f212b\" d=\"M63.859,33C64.506,33,65,33.52,65,33.979C65,34.064,65,37,65,37h3c0.552,0,1,0.447,1,1v3h2 c0.552,0,1,0.447,1,1v2.981c0,1.425-1.159,2.579-2.579,2.579H63.859C63.385,47.561,63,47.122,63,46.516v-4.537 c0-1.364,1.159-2.467,2.579-2.467h0.164c1.145,0,2.18-0.486,2.88-1.26c0.222-0.262,0.627-0.695,0.871-0.93 c0.515-0.493,1.467-0.777,2.386-0.538c0.516,0.122,1.055,0.364,1.574,0.784c0.52,0.42,1.03,1.091,1.324,1.68 c0.23,0.444,0.41,1.069,0.321,1.607c-0.174,0.916-0.876,1.6-1.714,2.038c-0.846,0.438-1.848,0.638-2.82,0.527 c-0.572-0.058-1.175-0.204-1.744-0.421c-0.568-0.217-1.104-0.526-1.616-0.877c-0.981-0.73-1.795-1.739-2.292-2.882 c-0.498-1.144-0.62-2.459-0.352-3.687c0.33-1.565,1.256-2.888,2.589-3.755C62.228,33.16,62.818,33,63.859,33z\"></path><path fill=\"#1f212b\" d=\"M16.5,51C16.224,51,16,50.776,16,50.5v-1C16,49.224,16.224,49,16.5,49S17,49.224,17,49.5v1 C17,50.776,16.776,51,16.5,51z\"></path></g></svg>"
+         ,"title":"Paytm karo",
+         "image":"",
+        "description": "I built a Paytm clone specifically to explore and master the ACID (Atomicity, Consistency, Isolation, Durability) properties in database management systems. This project deepened my understanding of transaction management, ensuring data integrity and reliability in distributed systems. It was a hands-on learning experience in handling concurrent transactions, maintaining consistency, and achieving fault tolerance.",
+        "technologies": ["React", "Node.js", "Express.js","MongoDB","Zod","Tailwind","JavaScript"]    
+    }
+      
+    ]
+  }
+  
