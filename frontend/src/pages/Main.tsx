@@ -1,7 +1,8 @@
 
 import { About } from "../components/About";
+import { Contact } from "../components/Contact";
 import { Home } from "../components/Home";
-import { Projects } from "../components/Projects";
+import  { Projects }  from "../components/Projects";
 import { Skills } from "../components/Skills";
 import useTheme from "../contexts/Theme"
 export const Main=()=>{
@@ -13,6 +14,7 @@ export const Main=()=>{
                 <About/>
                 <Projects/>
                 <Skills/>
+                <Contact/>
             </div>
         </main>
     )

@@ -18,7 +18,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project: { link, label
     const { theme } = useTheme();
     return (
         <a
-            className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full"
+            className={`${theme==='dark'?"border-slate-700 w-full":" border-slate-200"} border group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative`}
             href={link}
             aria-label={label}
             target="_blank"
@@ -30,21 +30,20 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project: { link, label
             </div>
 
             <div className="relative h-full">
-                <span className={` ${theme === 'dark' ? 'bg-gradient-to-r from-blue-500/0 via-blue-500/40 to-blue-500/0' : 'from-blue-400/0 via-blue-400/40 to-blue-400/0'} absolute w-[40%] -bottom-px right-px h-px`}></span>
-                <span className="absolute w-px -left-px top-[50%] h-[40%] bg-gradient-to-b from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
-
+                <span className={`absolute w-[60%] -bottom-px right-px h-px ${theme === 'dark'? 'bg-gradient-to-r from-blue-500/0 via-blue-500 to-blue-500/0': 'bg-gradient-to-r from-blue-400/0 via-blue-500 to-blue-400/0' }`}></span>
+                <span className={`absolute w-px -left-px top-[50%] h-[40%] bg-gradient-to-b ${theme === 'dark' ? 'from-blue-400/0 via-blue-500/40 to-blue-500/0'  : 'from-blue-500/0 via-blue-500/40 to-blue-500/0'}`}></span>
                 <div className={`flex flex-col items-start rounded p-4 relative ${theme === 'dark' ? 'border-gray-800' : ''}`}>
                     <div className="my-4">
                         {/* Add your SVG content here */}
                         {svg !== null && (
-        <div dangerouslySetInnerHTML={{ __html: svg }} />
+                        <div dangerouslySetInnerHTML={{ __html: svg }} />
     )}
                         {(image !== null && image !== "") && (
-        <img className=" bg-opacity-100" src={image} width={48} height={48} alt="Image Alt Text" />
+                          <img className=" bg-opacity-100" src={image} width={48} height={48} alt="Image Alt Text" />
     )}
                     </div>
 
-                    <div>
+                    <div className="z-0">
                         <h4 className={`text-xl font-bold tracking-tight ${theme === 'dark' ? 'text-gray-100' : 'text-gray-900'}`}>{title}</h4>
                         <p className={`leading-6 pt-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
                            {description}

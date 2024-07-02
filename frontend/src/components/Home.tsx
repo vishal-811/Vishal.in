@@ -29,7 +29,7 @@ export const Home = () => {
                     </div>
                 </div>
                 {/* Image */}
-                <img className="block z-[5] overflow-hidden rounded shadow-xl ring-1 ring-slate-900/5 relative bg-white h-20 w-20 mt-4 md:mt-4 md:ms-20" src={myimg} alt="Vishal Sharma" />
+                <img className="block z-[5] overflow-hidden rounded shadow-xl ring-1 ring-slate-900/5 relative bg-white h-20 w-20 mt-4 md:mt-1 md:ms-20" src={myimg} alt="Vishal Sharma" />
             </div>
         </div>
     );

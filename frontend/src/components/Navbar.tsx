@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
   const svgColor = theme === 'dark' ? 'text-teal-500' : 'text-black';
 
   return (
-    <nav className={`${theme === 'dark' ? 'bg-zinc-900' : 'bg-white'} sticky-nav flex justify-between items-center max-w-4xl w-full lg:pt-10 mt-0 mb-0 md:pt-4 md:mb-10 mx-auto`}>
+    <nav className={`${theme === 'dark' ? 'bg-zinc-900' :'bg-white bg-opacity-95'} sticky top-0 z-40 flex justify-between items-center max-w-4xl w-full p-8 mt-0 mb-0 md:mt-0 md:mb-10 mx-auto`}>
       <button type="button" onClick={setThemehandler} className="p-2 border solid rounded-2xl w-12 flex justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"

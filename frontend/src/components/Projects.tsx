@@ -22,6 +22,7 @@ export const Projects = () => {
                  <svg className="h-4 w-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
              </a>
         </div>
+                
            <div>
                <h2 className={`mt-12 font-bold text-2xl md:text-4xl tracking-tight mb-4 ${theme === 'dark' ? 'text-white' : 'text-black'}`}>Upcoming Projects</h2>
                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
