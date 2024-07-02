@@ -9,8 +9,8 @@ export const Home = () => {
             {/* Left content */}
             <div className="flex md:w-3/4 flex-col mt-6">
                 <h1 className={`font-bold text-3xl md:text-5xl tracking-tight mb-2 ${theme === 'light' ? 'text-black' : 'text-white'}`}>Vishal Sharma</h1>
-                <div className={`relative leading-7 items-center flex-wrap text-zinc-700 dark:text-zinc-400 mb-5 ps-2 ${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-800'} text-xl`}>
-                    <h2>Building Cool Projects...</h2>
+                <div className={`relative leading-7 items-center flex-wrap ${theme==='dark'?'text-zinc-400':'text-zinc-700'}  mb-5 ps-2 ${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-800'} text-xl`}>
+                    <h2 >Building Cool Projects...</h2>
                 </div>
                 <p className={`${theme === 'dark' ? 'text-zinc-600' : 'text-zinc-500'} text-lg`}>Full Stack Developer building web apps.</p>
             </div>
