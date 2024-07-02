@@ -17,7 +17,7 @@ export const Contact=()=>{
                         <p className={`font-italic ${theme==='dark'?'text-gray-200':'text-gray-700'} text-lg font-medium`}>Drop in your email ID and I will get back to you.</p>
                         <form className=" relative my-6">
                             <input type="email" placeholder="vishal@gmail.com" className={`px-4  py-2 mt-1 block w-full md:max-w-7xl border border-gray-300 rounded-md ${theme==='dark'?'bg-gray-800 text-gray-200':'bg-white text-gray-900'}`} required></input>
-                            <button className={`${theme==='dark'?"text-white":"text-black"}  flex items-center justify-center absolute right-1 top-1 px-4 font-bold h-8 w-28 ${theme==='dark'?'bg-gray-700 text-gray-100 rounded':'bg-gray-100  text-gray-900'}`}>Send</button>
+                            <button className={`${theme==='dark'?"text-white":"text-black"}  flex items-center justify-center absolute right-1 top-1 px-4 font-bold h-8 w-28 sm:w-8  ${theme==='dark'?'bg-gray-700 text-gray-100 rounded':'bg-gray-100  text-gray-900'}`}>Send</button>
                         </form>
                  </div>
              </div>

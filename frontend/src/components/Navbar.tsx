@@ -13,8 +13,8 @@ const Navbar: React.FC = () => {
   const svgColor = theme === 'dark' ? 'text-teal-500' : 'text-black';
 
   return (
-    <nav className={`${theme === 'dark' ? 'bg-zinc-900' :'bg-white bg-opacity-95'} sticky top-0 z-40 flex justify-between items-center max-w-4xl w-full p-8 mt-0 mb-0 md:mt-0 md:mb-10 mx-auto`}>
-      <button type="button" onClick={setThemehandler} className="p-2 border solid rounded-2xl w-12 flex justify-center">
+    <nav className={`${theme === 'dark' ? 'bg-zinc-900' : 'bg-white bg-opacity-60'} fixed top-0 z-40 flex justify-between items-center max-w-4xl w-full p-8 mt-0 mb-0 md:mt-0 md:mb-10 md:ms-80 mx-auto filter backdrop-blur-lg`}>
+      <button type="button" onClick={setThemehandler} className="p-2 border solid rounded-2xl w-12 flex justify-center backdrop-blur">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
           />
         </svg>
       </button>
-      <div>
+      <div className="backdrop-blur">
         <p>Hello, I am Vishal</p>
       </div>
     </nav>
