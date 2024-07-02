@@ -5,7 +5,7 @@ export const Home = () => {
     const { theme } = useTheme();
 
     return (
-        <div className="flex flex-col md:flex-row justify-between items-start md:space-x-44 w-full mb-10 md:mt-24 mt-16">
+        <div className="flex flex-col md:flex-row justify-between items-start md:space-x-44 w-full mb-10 md:mt-24 mt-24">
             {/* Left content */}
             <div className="flex md:w-3/4 flex-col mt-6">
                 <h1 className={`font-bold text-3xl md:text-5xl tracking-tight mb-2 ${theme === 'light' ? 'text-black' : 'text-white'}`}>Vishal Sharma</h1>

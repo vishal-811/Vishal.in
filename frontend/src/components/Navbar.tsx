@@ -3,7 +3,7 @@ import useTheme from "../contexts/Theme";
 const Navbar: React.FC = () => {
     const {theme ,setTheme} =useTheme();
 
-    function setThemehandler(){
+    function setThemeHandler(){
       const isCurrentDark = theme === 'dark';
       setTheme(isCurrentDark ? 'light' : 'dark');
     }
@@ -13,8 +13,8 @@ const Navbar: React.FC = () => {
   const svgColor = theme === 'dark' ? 'text-teal-500' : 'text-black';
 
   return (
-    <nav className={`${theme === 'dark' ? 'bg-zinc-900' : 'bg-white bg-opacity-60'} fixed top-0 z-40 flex justify-between items-center max-w-4xl w-full p-8 mt-0 mb-0 md:mt-0 md:mb-10 md:ms-80 mx-auto filter backdrop-blur-lg`}>
-      <button type="button" onClick={setThemehandler} className="p-2 border solid rounded-2xl w-12 flex justify-center backdrop-blur">
+    <nav className={`${theme === 'dark' ? 'bg-zinc-900' : 'bg-white bg-opacity-60'} fixed top-0 z-40 flex justify-between items-center max-w-4xl w-full p-8 mt-0 mb-0 md:mt-0 md:mb-0 mx-auto md:mx-80 filter backdrop-blur-lg`}>
+      <button type="button" onClick={setThemeHandler} className="p-2 border solid rounded-2xl w-12 flex justify-center backdrop-blur">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -30,11 +30,12 @@ const Navbar: React.FC = () => {
           />
         </svg>
       </button>
-      <div className="backdrop-blur">
-        <p>Hello, I am Vishal</p>
+      <div>
+        <p>I am a Home button</p>
       </div>
     </nav>
   );
+
 };
 
 export default Navbar;
