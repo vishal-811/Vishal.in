@@ -6,7 +6,7 @@ import useTheme from '../contexts/Theme';
        name:string,
        key:string,
        offsetNo:number,
-       handleLinkClick?:()=>{}
+       handleLinkClick?: () => void
    }
 export const NavbarLinks:React.FC<LinksProps>=({path , name ,offsetNo , handleLinkClick})=>{
      const { theme } = useTheme();
