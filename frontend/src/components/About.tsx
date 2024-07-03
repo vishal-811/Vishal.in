@@ -3,7 +3,7 @@ import useTheme from "../contexts/Theme"
 export const About=()=>{
      const {theme}=useTheme();
     return(
-        <div className="flex flex-col mb-12">
+        <div id="about" className="flex flex-col mb-12">
              <div className={`font-bold text-2xl md:text-4xl tracking-tight mb-4 text-black ${theme==='dark'?'text-white':'text-black'}`}>
                   <h2>About me</h2>
              </div>

@@ -1,13 +1,13 @@
 import useTheme from "../contexts/Theme";
 import { ProjectCard } from "./ProjectCard";
-import projectdata from '../ProjectData.json';
-import upcomingProject from "../UpcomingProject.json"
+import projectdata from '../data/ProjectData.json';
+import upcomingProject from "../data/UpcomingProject.json"
 
 export const Projects = () => {
     const { theme } = useTheme();
 
     return (
-        <div>
+        <div id="project">
         <div>
             <h2 className={`font-bold text-2xl md:text-4xl tracking-tight mb-4 ${theme === 'dark' ? 'text-white' : 'text-black'}`}>Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

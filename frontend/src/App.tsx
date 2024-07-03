@@ -1,6 +1,6 @@
 import { Layout } from "./pages/Layout"
 import { ThemeContext } from "./contexts/Theme"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 function App() {
      const [theme,setTheme]=useState("dark")

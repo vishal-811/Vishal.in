@@ -4,7 +4,7 @@ import useTheme from "../contexts/Theme"
 export const Contact=()=>{
       const {theme} =useTheme();
     return(
-        <div className="mt-12">
+        <div id="contact" className="mt-12">
              <div>
                 <h3 className={`${theme==='dark'?'text-white':'text-black'} text-2xl md:text-4xl tracking-tight font-bold`}>Reach me out</h3>
                  

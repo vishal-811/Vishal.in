@@ -1,11 +1,58 @@
-import React from "react";
+import { useState ,useEffect } from "react";
+import React  from "react";
 import useTheme from "../contexts/Theme";
+import { NavbarLinks } from "./NavbarLinks";
+import { Hamburger } from "./Hamburger";
 const Navbar: React.FC = () => {
+  let Links=[
+    { 
+        id:'100',
+        name:"Home",
+        path:"home",
+        offsetNo:-100
+    },
+    {
+        id:'101',
+        name:"About me",
+        path:"about",
+        offsetNo:-100
+    },
+    {
+        id:'102',
+        name:"Projects",
+        path:"project",
+        offsetNo:-100
+    },
+    { 
+        id:'103',
+        name:"Skills",
+        path:"skills",
+        offsetNo:-100
+    },
+    {
+          id:'104',
+          name:"Contact me",
+          path:"contact",
+          offsetNo:-100
+    }
+]
+
+   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
+
+     useEffect(() => {
+      const handleResize = () => {
+       setIsSmallScreen(window.innerWidth < 768);
+      };
+
+  window.addEventListener('resize', handleResize);
+  return () => window.removeEventListener('resize', handleResize);
+}, []);
+
     const {theme ,setTheme} =useTheme();
 
-    function setThemeHandler(){
+   function setThemeHandler(){
       const isCurrentDark = theme === 'dark';
-      setTheme(isCurrentDark ? 'light' : 'dark');
+     setTheme(isCurrentDark ? 'light' : 'dark');
     }
   const svgPath = theme === 'dark'
     ?'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z'
@@ -31,9 +78,17 @@ const Navbar: React.FC = () => {
           />
         </svg>
       </button>
-      <div className="md:flex md:justify-center md:items-center">
-        <p>I am a Home button</p>
-      </div>
+        
+          <div>
+              {!isSmallScreen?( <div className={`${theme==='dark'?'bg-zinc-900/90 text-zinc-200 ring-white/10':'bg-white/90  text-zinc-800 shadow-zinc-800/5 ring-zinc-900/5'} hidden sm:block rounded-full  px-3 text-sm font-medium shadow-lg  ring-1  backdrop-blur`}>
+            {Links.map((linkdata)=>{
+                return  <NavbarLinks path={linkdata.path} name={linkdata.name} key={linkdata.id} offsetNo={950}/>
+            })}
+      </div>)
+      :
+       (<Hamburger/>)
+      }
+          </div>
     </nav>
       </div>
   );
