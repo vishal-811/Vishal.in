@@ -17,7 +17,7 @@ export const Home = () => {
             
             {/* Right content with image */}
             <div className="relative flex-shrink-1 p-4 md:p-4 md:order-last order-first">
-                <div className="z-0">
+                <div>
                     <div className={`absolute left-0 -right-12 top-0 h-px ${theme === 'dark' ? 'bg-zinc-300/[0.1]' : 'bg-slate-900/[0.1]'}  mt-4`}></div>
                     <div className={`absolute -top-12 bottom-0 left-12 w-px ${theme === 'dark' ? 'bg-zinc-300/[0.1]' : 'bg-slate-900/[0.1]'} h-16 mt-12`}></div>
                     <div className={`absolute left-0 -right-12 bottom-14 h-px ${theme === 'dark' ? 'bg-zinc-300/[0.1]' : 'bg-slate-900/[0.1]'} `}></div>
@@ -29,7 +29,7 @@ export const Home = () => {
                     </div>
                 </div>
                 {/* Image */}
-                <img className="block z-[5] overflow-hidden rounded shadow-xl ring-1 ring-slate-900/5 relative bg-white h-20 w-20 mt-4 md:mt-1 md:ms-20" src={myimg} alt="Vishal Sharma" />
+                <img className="block z-5 overflow-hidden rounded shadow-xl ring-1 ring-slate-900/5 relative bg-white h-20 w-20 mt-4 md:mt-1 md:ms-20" src={myimg} alt="Vishal Sharma" />
             </div>
         </div>
     );
