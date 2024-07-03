@@ -62,7 +62,7 @@ const Navbar: React.FC = () => {
   return (
       <div className=" w-full fixed z-10">
       <nav className={`${theme === 'dark' ? 'bg-zinc-900' : 'bg-white bg-opacity-60'} sticky-nav top-0 filter backdrop-blur-lg  flex justify-between items-center max-w-4xl w-full p-8 mt-0 mb-0 md:mt-0 md:mb-10 mx-auto z-50`}>
-      <button type="button" onClick={setThemeHandler} className="p-2 border solid rounded-2xl w-12 flex justify-center backdrop-blur">
+      <button type="button" onClick={setThemeHandler} className={`p-2 border solid rounded-2xl w-12 flex justify-center backdrop-blur ${theme==='dark'?'border-teal-500 hover:border-gray-200':'border-gray-400'}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
           <div>
               {!isSmallScreen?( <div className={`${theme==='dark'?'bg-zinc-900/90 text-zinc-200 ring-white/10':'bg-white/90  text-zinc-800 shadow-zinc-800/5 ring-zinc-900/5'} hidden sm:block rounded-full  px-3 text-sm font-medium shadow-lg  ring-1  backdrop-blur`}>
             {Links.map((linkdata)=>{
-                return  <NavbarLinks path={linkdata.path} name={linkdata.name} key={linkdata.id} offsetNo={950}/>
+                return  <NavbarLinks path={linkdata.path} name={linkdata.name} key={linkdata.id} offsetNo={linkdata.offsetNo}/>
             })}
       </div>)
       :
