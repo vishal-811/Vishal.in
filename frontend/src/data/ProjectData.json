@@ -26,6 +26,15 @@
          "image":"",
         "description": "I built a Paytm clone specifically to explore and master the ACID (Atomicity, Consistency, Isolation, Durability) properties in database management systems. This project deepened my understanding of transaction management, ensuring data integrity and reliability in distributed systems. It was a hands-on learning experience in handling concurrent transactions, maintaining consistency, and achieving fault tolerance.",
         "technologies": ["React", "Node.js", "Express.js","MongoDB","Zod","Tailwind","JavaScript"]    
+    },
+    {
+       "link":"https://blogbuddy.vercel.app/",
+       "label": "BlogBuddy",
+       "svg": "",
+       "title":"BlogBuddy",
+       "image":"",
+       "description": "BlogBuddy is a modern blogging platform where users can read and write stories seamlessly. The backend uses Hono for a serverless architecture on Cloudflare Workers, Zod for validation, PostgreSQL Neon for the database, and Prisma as the ORM. The frontend is built with React, offering an intuitive user experience.",
+       "technologies": ["React", "Hono","Postgresql","Zod","Tailwind","Typescript"]  
     }
       
     ]
